@@ -29,7 +29,7 @@ const b = 2;
 ```javascript
 const $ = require('gogocode');
 const script = $(source);
-// 按照你的意图，用 $_$ 当通配符能匹配任意位置的 AST 节点。
+// 按照你的意图，用 $_$ 当通配符能匹配任意位置的 AST 节点
 const aAssignment = script.find('const a = $_$');
 // 获得我们匹配的 AST 节点的 value
 const aValue = aAssignment.match?.[0]?.[0]?.value;
